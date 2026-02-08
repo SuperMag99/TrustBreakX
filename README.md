@@ -7,7 +7,7 @@ TrustBreakX helps security engineers, red teams, blue teams, and defenders quick
 
 > Can a low-privileged user realistically gain SYSTEM execution on this machine?
 
-![TrustBreakX Hero Screenshot](https://github.com/SuperMag99/TrustBreakX/blob/main/components/Screenshot%1.png)
+![TrustBreakX Hero Screenshot](https://github.com/SuperMag99/TrustBreakX/blob/main/Screenshot/1.png)
 
 ---
 
