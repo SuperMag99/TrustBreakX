@@ -1,0 +1,16 @@
+# Go
+/bin/
+/pkg/
+*.exe
+*.test
+
+# Output
+/output/*.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
