@@ -1,92 +1,104 @@
-# TrustBreakX 🔓
+TrustBreakX 🔓
 
-**TrustBreakX** is a professional-grade Windows security assessment tool designed to identify **real SYSTEM-level trust breaks** caused by misconfigured execution paths.  
-It focuses on **practical privilege escalation opportunities**, not theoretical vulnerabilities or missing patches.
+TrustBreakX is a professional-grade Windows security assessment tool designed to identify
+real SYSTEM-level trust breaks caused by misconfigured execution paths.
+
+It focuses on practical privilege escalation opportunities, not theoretical vulnerabilities
+or missing patches.
 
 TrustBreakX helps security engineers, red teams, blue teams, and defenders quickly answer one critical question:
 
-> Can a low-privileged user realistically gain SYSTEM execution on this machine?
+Can a low-privileged user realistically gain SYSTEM execution on this machine?
 
-![TrustBreakX Hero Screenshot](https://github.com/SuperMag99/TrustBreakX/blob/main/Screenshot/1.png)
+🎯 Features
 
----
+SYSTEM Service Trust Analysis
+Detects Windows services running as LocalSystem that execute binaries from user-writable paths.
 
-## 🎯 Features
+SYSTEM Scheduled Task Analysis
+Identifies scheduled tasks running as SYSTEM with writable execution paths.
 
-- **SYSTEM Service Trust Analysis**  
-  Detects Windows services running as `LocalSystem` that execute binaries from user-writable paths.
+SYSTEM PATH Hijacking Detection
+Finds writable directories in the SYSTEM execution PATH that allow binary planting and command hijacking.
 
-- **SYSTEM Scheduled Task Analysis**  
-  Identifies scheduled tasks running as `SYSTEM` with writable execution paths.
+High-Confidence Findings Only
+No CVE scanning, no patch checks, no noisy ACL dumps — only real, exploitable trust relationships.
 
-- **SYSTEM PATH Hijacking Detection**  
-  Finds writable directories in the SYSTEM execution PATH that allow binary planting and command hijacking.
+CLI-Friendly and Automation Ready
+Clean terminal output with structured JSON export for reporting and automation.
 
-- **High-Confidence Findings Only**  
-  No CVE scanning, no patch checks, no noisy ACL dumps — only real, exploitable trust relationships.
-
-- **CLI-Friendly + Automation Ready**  
-  Clean terminal output with structured JSON export for reporting and automation.
-
----
-
-## 🚀 Getting Started
+🚀 Getting Started
 
 Follow the steps below to run TrustBreakX locally on a Windows system.
 
-### 1. Download the Repository
+1. Download the Repository
 
 Clone the repository using Git:
-```powershell
+
 git clone https://github.com/SuperMag99/TrustBreakX.git
 cd TrustBreakX
 
-### 2. Install Go (If Not Installed)
+2. Install Go (If Not Installed)
 
 TrustBreakX is written in Go.
 
 Download Go from:
+
 https://go.dev/dl/
 
-Install **Go 1.21 or newer**.
 
-### 3. Run TrustBreakX
+Install Go version 1.21 or newer.
 
-⚠️ PowerShell must be run as **Administrator**.
+3. Run TrustBreakX
 
-From the project root directory:
-```powershell
+PowerShell must be run as Administrator.
+
+From the project root directory, run:
+
 go run ./cmd/trustbreakx
 
----
 
-## 🧭 Security and Vulnerabilities
+Findings will be printed to the console and exported as JSON in the output directory.
 
-- **Security:** Refer to [SECURITY.md](./SECURITY.md).
+🧭 Security and Vulnerabilities
 
-## ⚖️ Legal & Ethical Disclaimer
+Security policy and vulnerability reporting instructions are available in:
 
-This tool is for **educational and lawful OSINT use only**. TrustBreakX only generates search engine queries. It does not collect or store personal data, nor does it perform any intrusive scraping or bypass security controls. Users are solely responsible for ensuring their use of these queries complies with local laws and search engine Terms of Service.
+SECURITY.md
 
-## License Summary
+⚖️ Legal and Ethical Disclaimer
 
-This project is licensed under a **Non-Commercial Attribution License**. Key points:
+This tool is intended for defensive security, auditing, and educational use only.
 
-1. ✅ **Free to use for personal, educational, and research purposes.**
-2. ✅ **Any modification or derivative work must credit to the author.
-3. ❌ **Commercial use, sale, licensing, or any use intended to generate revenue is strictly prohibited without prior written permission.**
-4. ⚠️ **No warranty**: Use at your own risk.
-5. ⚖️ **Legal protection**: Unauthorized commercial use or failure to credit the author may result in legal action.
+TrustBreakX does not exploit vulnerabilities, perform attacks, or modify system state.
+It only analyzes existing Windows trust relationships and execution paths.
 
-For full license details, see the `LICENSE` file. [LICENSE](./LICENSE).
+Users are responsible for ensuring their usage complies with organizational policies and local laws.
 
----
+📜 License Summary
 
-## 👤 Maintainer
+This project is licensed under a Non-Commercial Attribution License.
 
-🔗 **GitHub**: [https://github.com/SuperMag99](https://github.com/SuperMag99)  
-🔗 **LinkedIn**: [https://www.linkedin.com/in/mag99/](https://www.linkedin.com/in/mag99/)
+Key points:
 
----
+Free to use for personal, educational, and research purposes
 
-*All trademarks and service names mentioned in this project are the property of their respective owners.*
+Any modification or derivative work must credit the author
+
+Commercial use, sale, or monetization is prohibited without written permission
+
+No warranty — use at your own risk
+
+Unauthorized commercial use may result in legal action
+
+For full license details, see:
+
+LICENSE
+
+👤 Maintainer
+
+Mohammad Ali Ghanem
+
+GitHub: https://github.com/SuperMag99
+
+LinkedIn: https://www.linkedin.com/in/mag99/
