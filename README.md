@@ -40,6 +40,7 @@ Clone the repository using Git:
 ```powershell
 git clone https://github.com/SuperMag99/TrustBreakX.git
 cd TrustBreakX
+```
 
 ### 2. Install Go (If Not Installed)
 
@@ -57,6 +58,7 @@ Install **Go 1.21 or newer**.
 From the project root directory:
 ```powershell
 go run ./cmd/trustbreakx
+```
 
 ---
 
@@ -66,9 +68,9 @@ go run ./cmd/trustbreakx
 
 ## ⚖️ Legal & Ethical Disclaimer
 
-This tool is intended for defensive security, auditing, penetration testing, and educational use only.
-TrustBreakX does not exploit vulnerabilities, perform attacks, or modify system state.
-It only analyzes existing Windows trust relationships and execution paths.
+This tool is intended for defensive security, auditing, penetration testing, and educational use only.  
+TrustBreakX does not exploit vulnerabilities, perform attacks, or modify system state.  
+It only analyzes existing Windows trust relationships and execution paths.  
 Users are solely responsible for ensuring their use complies with local laws and organizational policies.
 
 ## License Summary
@@ -76,7 +78,7 @@ Users are solely responsible for ensuring their use complies with local laws and
 This project is licensed under a **Non-Commercial Attribution License**. Key points:
 
 1. ✅ **Free to use for personal, educational, and research purposes.**
-2. ✅ **Any modification or derivative work must credit to the author.
+2. ✅ **Any modification or derivative work must credit to the author.**
 3. ❌ **Commercial use, sale, licensing, or any use intended to generate revenue is strictly prohibited without prior written permission.**
 4. ⚠️ **No warranty**: Use at your own risk.
 5. ⚖️ **Legal protection**: Unauthorized commercial use or failure to credit the author may result in legal action.
@@ -93,3 +95,4 @@ For full license details, see the `LICENSE` file. [LICENSE](./LICENSE).
 ---
 
 *All trademarks and service names mentioned in this project are the property of their respective owners.*
+
